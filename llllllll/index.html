@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  </title>
+    <style>
+        @font-face {
+            font-family: 'Cyberspace';
+            src: url('/fonts/cyberspace.woff') format('woff'); 
+        }
+
+        body {
+            font-family: 'Cyberspace', sans-serif;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .content {
+            text-align: center;
+            max-width: 600px;
+            padding: 20px;
+        }
+
+        .image-top {
+            width: 100%;
+            max-width: 300px;
+            margin: 20px 0;
+        }
+
+        .image-bottom {
+            width: 50px; 
+            margin-top: 20px;
+            opacity: 0; /* Hide the image by making it fully transparent */
+            position: absolute; /* Move the image out of the viewport */
+            top: -9999px; /* Keeps the image off-screen */
+        }
+
+        .message {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+
+        .binary-code {
+            font-family: monospace;
+            font-size: 1.5em;
+            color: #00ff00;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <p class="message">
+            QHDLWL DKSGDKEH WHSWPGKQSLEK.
+        </p>
+       
+        <p class="binary-code">그럴수 있어. 이런날도 있는거지 뭐.</p>
+        
+        <img src="images/image.png" alt="Hidden Image" class="image-bottom">
+    </div>
+</body>
+</html>
